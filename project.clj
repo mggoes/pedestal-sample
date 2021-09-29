@@ -8,7 +8,7 @@
                  [org.slf4j/slf4j-simple "1.7.32"]
                  [org.clojure/data.json "2.4.0"]]
 
-  :main ^:skip-aot pedestal-sample.greet
+  :main ^:skip-aot pedestal-sample.main
 
   :target-path "target/%s"
 
