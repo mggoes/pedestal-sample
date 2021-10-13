@@ -10,7 +10,8 @@
                  [org.clojure/data.json "2.4.0"]
                  [org.slf4j/jul-to-slf4j "1.7.22"]
                  [org.slf4j/jcl-over-slf4j "1.7.22"]
-                 [org.slf4j/log4j-over-slf4j "1.7.22"]]
+                 [org.slf4j/log4j-over-slf4j "1.7.22"]
+                 [nubank/matcher-combinators "3.3.1"]]
 
   :main ^:skip-aot pedestal-sample.main
 
