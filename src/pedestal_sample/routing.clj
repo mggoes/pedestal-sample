@@ -75,7 +75,7 @@
       ["/products/:id" :get [(bp/body-params) one-product] :route-name :one-product]}))
 
 (def service-map {::http/routes routes
-                  ::http/type   :jetty
+                  ::http/type   :immutant
                   ::http/port   8080})
 
 (defn create-server
