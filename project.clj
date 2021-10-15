@@ -12,6 +12,7 @@
                  [org.slf4j/jul-to-slf4j "1.7.22"]
                  [org.slf4j/jcl-over-slf4j "1.7.22"]
                  [org.slf4j/log4j-over-slf4j "1.7.22"]
+                 [com.stuartsierra/component "1.0.0"]
                  [nubank/matcher-combinators "3.3.1"]]
 
   :main ^:skip-aot pedestal-sample.main
