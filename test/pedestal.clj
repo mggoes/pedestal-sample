@@ -22,7 +22,7 @@
          (component/stop ~bound-var)))))
 
 (deftest greeting-test
-  (with-system [sut (pedestal/new-system :test)]
+  (with-system [sut (:test pedestal/env)]
                (let [service (service-fn sut)
                      {:keys [status body]} (response-for service :get (url-for :greet))]
                  (is (= 200 status))
