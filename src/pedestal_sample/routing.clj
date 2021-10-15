@@ -74,9 +74,13 @@
       ["/products" :post [(bp/body-params) save-product] :route-name :save-product]
       ["/products/:id" :get [(bp/body-params) one-product] :route-name :one-product]}))
 
-(def service-map {::http/routes routes
-                  ::http/type   :immutant
-                  ::http/port   8080})
+(def service-map {::http/routes         routes
+                  ::http/type           :immutant
+                  ;Serving static resources
+                  ::http/resource-path  "/public"
+                  ;Disables logging interceptor
+                  ;::http/request-logger nil
+                  ::http/port           8080})
 
 (defn create-server
   []
